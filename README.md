@@ -7,7 +7,7 @@ Symfony2 bundle for [MailChimp](http://apidocs.mailchimp.com/api/1.3/index.php) 
 
 MZMailChimpBundle is licensed under the MIT License - see the `Resources/meta/LICENSE` file for details
 
-**MailChimp API Method Supported**
+**MailChimp API Method Supported**test2@example.com')
 
 1. `listSubscribe`
 2. `listUnSubscribe`
@@ -306,7 +306,7 @@ mz_mail_chimp:
 	$campaign = $mailChimp->getCampaign();
 	$list = $mailChimp->getList();
         $segmentId = $list->listStaticSegmentAdd('first_segment');
-	$batch = array('test1@example.com',test2@example.com');
+	$batch = array('test1@example.com', 'test2@example.com');
 	$list->listStaticSegmentMembersAdd($segmentId, $batch);	
 	$conditions[] = array(
 				'field' => 'static_segment',
